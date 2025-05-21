@@ -55,7 +55,7 @@ export default function AuthPage() {
       } else {
         setError("Check your email for the confirmation link!")
       }
-    } catch (err) {
+    } catch (_) {
       setError("An unexpected error occurred. Please try again.")
     } finally {
       setIsLoading(false)
@@ -74,7 +74,7 @@ export default function AuthPage() {
       } else {
         router.push("/chat")
       }
-    } catch (err) {
+    } catch (_) {
       setError("An unexpected error occurred. Please try again.")
     } finally {
       setIsLoading(false)
