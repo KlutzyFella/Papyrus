@@ -99,14 +99,16 @@ export default function Header() {
                         </DropdownMenuContent>
                     </DropdownMenu>
                 ) : (
-                    <Button
-                        variant="default"
-                        size="sm"
-                        className="bg-emerald-600 hover:bg-emerald-700 text-white"
-                        onClick={() => router.push("/auth")}
-                    >
-                        Sign In
-                    </Button>
+                    // Sign In button removed cause it was created by v0 lol
+                    <></>
+                    // <Button
+                    //     variant="default"
+                    //     size="sm"
+                    //     className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                    //     onClick={() => router.push("/auth")}
+                    // >
+                    //     Sign In
+                    // </Button>
                 )}
             </div>
 
@@ -154,16 +156,18 @@ export default function Header() {
                                 </button>
                             </>
                         ) : (
-                            <Button
-                                variant="default"
-                                className="bg-emerald-600 hover:bg-emerald-700 text-white mt-2"
-                                onClick={() => {
-                                    router.push("/auth")
-                                    setIsMobileMenuOpen(false)
-                                }}
-                            >
-                                Sign In
-                            </Button>
+                            <></>
+                            // Sign In button removed cause it was created by v0 lol
+                            // <Button
+                            //     variant="default"
+                            //     className="bg-emerald-600 hover:bg-emerald-700 text-white mt-2"
+                            //     onClick={() => {
+                            //         router.push("/auth")
+                            //         setIsMobileMenuOpen(false)
+                            //     }}
+                            // >
+                            //     Sign In
+                            // </Button>
                         )}
                     </div>
                 </div>
