@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 
 export async function POST(req: NextRequest) {
-  console.log('[api/saveMessage] starting...')
+//   console.log('[api/saveMessage] starting...')
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -23,8 +23,8 @@ export async function POST(req: NextRequest) {
     error: authError,
   } = await supabase.auth.getUser()
 
-  console.log('[api/saveMessage] user:', user)
-  console.log('[api/saveMessage] authError:', authError)
+//   console.log('[api/saveMessage] user:', user)
+//   console.log('[api/saveMessage] authError:', authError)
 
   if (!user) {
     return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })
